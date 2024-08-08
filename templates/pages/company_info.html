@@ -2,12 +2,86 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>메인 페이지</title>
+    <title>회사 소개</title>
 </head>
 <body>
 {% extends 'base.html' %}
 {% block content %}
-<h1>회사소개 페이지입니다.</h1>
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
+                                       src="https://i.namu.wiki/i/jWixDlDZMoA5kzkChaw9uZJ4aC522er_7GHlLyU282_rvQGz1EECXfG2o2AYTRjLJv6qa3rw4DRGEXlNMkTlsnZdvpV30niKDOVW1ajLXEXwe3U8FCnoAU4fZeQ4EW6J6zPWuHFqMg-bRDhaCbASPw.webp"
+                                       alt="..." width="600" height="700"/></div>
+            <div class="col-md-6">
+                <div class="small mb-1">A Company CEO</div>
+                <h1 class="display-5 fw-bolder">맹구</h1>
+                <div class="fs-5 mb-5">
+                    <span class="text-decoration-line-through">떡잎대학교 학사 / 떡잎대학교 석사</span>
+                </div>
+                <p class="lead">안녕하세요,<br>A Company 대표 맹구입니다.<br>
+                    저희 회사의 경우 고객님들께 더욱 맛있는 우유를 <br>드리고자
+                    항상 전직원들이 노력하고 연구하고<br> 개발하고 있습니다.
+                    소비자분들께서는 마음 편하게 믿고 드셔도 문제되지 않도록
+                    항상 최선을 다하겠습니다.<br>감사합니다.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5 bg-light">
+    <div class="container px-4 px-lg-5 mt-5">
+        <h2 class="fw-bolder mb-4">A Company Information</h2>
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">경영 이념</h5>
+                            소비자가 드시는 전에<br>본인 가족이 먹을 수 있을 정도로 믿을만한 상품을 만들자
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">~1999
+                    </div>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">1999년까지 히스토리</h5>
+                            1970년 - 회사 창업<br>
+                            1980년 - 최초의 건강한<br>우유 개발<br>
+                            1990년 - 우유 매출<br>한국 1위 달성
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">2000~
+                    </div>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">2000년부터 히스토리</h5>
+                            2000년 ~ 2005년<br>
+                            한국 최초 해외 우유 수출<br>
+                            2005년 ~ 2010년<br>
+                            전세계 우유 매출 Top 10<br>
+                            2010년 ~ 2024년<br>
+                            전세계 1위 우유 회사
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 {% endblock %}
 </body>
 </html>
