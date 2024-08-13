@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">A Company Q & A</h1>
+                    <p class="lead text-white-50 mb-4">자유롭게 질문해주시고 답해주는<br>
+                    고객과 회사 모두의 의견을 공유하는 공간입니다!</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">LIKE</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#!">HATE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Pricing section-->
+<section class="bg-light py-5 border-bottom">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+            <!-- Pricing card free-->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">바나나 우유</div>
+                        <div class="mb-3">
+                            <strong><span class="fw-bold">Q : 바나나 우유와 조합이 좋은 과자 추천해주세요!</span></strong>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>ID : happy</strong>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>A : 바나나 우유와 가장 조합이 좋은 과자는 초코칩 쿠키 과자 추천드립니다!</strong>
+                            </li>
+
+                        </ul>
+                        <div class="d-grid"><a class="btn btn-outline-primary" href="#!">좋아요</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing card free-->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">사막 칵테일</div>
+                        <div class="mb-3">
+                            <strong><span class="fw-bold">Q : 사막 칵테일 진짜 사막에서 만든건가요?</span></strong>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>ID : lulululu</strong>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>A : 사막에서 진짜 만든 것은 아니지만, 사막의 느낌은 이렇다~ 경험할 수 있습니다!</strong>
+                            </li>
+
+                        </ul>
+                        <div class="d-grid"><a class="btn btn-outline-primary" href="#!">좋아요</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pricing card free-->
+            <div class="col-lg-6 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">달고나 라떼</div>
+                        <div class="mb-3">
+                            <strong><span class="fw-bold">Q : 커피 맛이 조금 이상한 것 같아요...</span></strong>
+                        </div>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>ID : sad</strong>
+                            </li>
+                            <li class="mb-2">
+                                <i class="bi bi-check text-primary"></i>
+                                <strong>A : 죄송합니다. 다음부터는 더 나은 품질로 제공해드리겠습니다.</strong>
+                            </li>
+
+                        </ul>
+                        <div class="d-grid"><a class="btn btn-outline-primary" href="#!">좋아요</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

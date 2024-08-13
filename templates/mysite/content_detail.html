@@ -6,7 +6,8 @@
     <div class="container px-4 px-lg-5 my-5">
         <div class="row gx-4 gx-lg-5 align-items-center">
             <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
-                                       src="https://i.namu.wiki/i/DZqw2ZRDJGda2Ss4_7bsf7aAx3wyqomyvpm5JThJ7yJjAKv0jUmURo0z1qzu_68Btg67-MLMcJzcAJxmHGdB_2bwOQ9-jFIoLwyb8vYQKvGzT3PZkfc6OACnucp5eqxPby2T0QNecgTH7ubuyoP1Ww.webp" alt="..." width="600" height="600"/></div>
+                                       src="https://i.namu.wiki/i/DZqw2ZRDJGda2Ss4_7bsf7aAx3wyqomyvpm5JThJ7yJjAKv0jUmURo0z1qzu_68Btg67-MLMcJzcAJxmHGdB_2bwOQ9-jFIoLwyb8vYQKvGzT3PZkfc6OACnucp5eqxPby2T0QNecgTH7ubuyoP1Ww.webp"
+                                       alt="..." width="600" height="600"/></div>
             <div class="col-md-6">
                 <div class="small mb-1">시즌3 : 여름.ver</div>
                 <h1 class="display-5 fw-bolder">{{ content_list.title }}</h1>
@@ -16,6 +17,37 @@
                 </div>
                 <p class="lead">{{ content_list.content }}</p>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="card bg-light">
+        <div class="card-body">
+            <form method="post" class="mb-4" action="{% url 'comment_create' content_list.id %}">
+                {% csrf_token %}
+                <textarea id="content" name="content" class="form-control" rows="3"
+                          placeholder="내용을 입력해주세요."></textarea>
+                <button type="submit" class="btn btn-primary">submit</button>
+            </form>
+            {% for comment in content_list.comment_set.all %}
+            <div class="d-flex">
+                <div class="ms-3">
+                    <div class="fw-bold">{{ comment.author.username }} &nbsp&nbsp {{ comment.create_date }}
+                        {% if comment.create_date != comment.modify_date %}
+                        / 수정일자: {{ comment.modify_date }}
+                        {% endif %}
+                        {% if request.user == comment.author %}
+                        <a href="{% url 'comment_update' comment.id  %}" class="btn btn-sm btn-outline secondary">수정</a>
+                        <a href="{% url 'comment_delete' comment.id  %}" class="btn btn-sm btn-outline secondary">삭제</a>
+                        {% endif %}
+                    </div>
+
+                    {{ comment.content }}
+                </div>
+            </div>
+            <br/>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">A Company 고객 상담</h1>
+                    <p class="lead text-white-50 mb-4">상담을 원하시는 분은 아래 방법 중 택하여 진행해주시면 감사하겠습니다!</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">LIKE</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#!">HATE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Features section-->
+<section class="py-5 border-bottom" id="features">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/8111/8111889.png"width="128" height="128"></img>
+                <h2 class="h4 fw-bolder">전화 상담</h2>
+                <p>Phone Number : 010 - XXXX - XXXX</p>
+                </a>
+            </div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png"width="128" height="128"></img>
+                <h2 class="h4 fw-bolder">이메일 상담</h2>
+                <p>Email : acompany@Acompany.com</p>
+            </div>
+            <div class="col-lg-4">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111683.png"width="128" height="128"></img>
+                <h2 class="h4 fw-bolder">카카오톡 상담</h2>
+                <p>Kakao Talk Channel: Acompany</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+{% endblock %}

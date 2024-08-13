@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">A Company notice board</h1>
+                    <p class="lead text-white-50 mb-4">언제! 어디서든! 들릴 수 있는!<br>
+                    다양한 소식 정보 글 구경하세요!</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">LIKE</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#!">HATE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Testimonials section-->
+<section class="py-5 border-bottom">
+    <div class="container px-5 my-5 px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <!-- Testimonial 1-->
+                <div class="card mb-4">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-1">아침에 시원한 아이스 아메리카노에 달콤쫀쫀한 모찌떡과 함께 하루를 시작하니 든든합니다~</p>
+                                <div class="small text-muted">- 말랑말랑 모찌</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2-->
+                <div class="card">
+                    <div class="card-body p-4">
+                        <div class="d-flex">
+                            <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i>
+                            </div>
+                            <div class="ms-4">
+                                <p class="mb-1">하루가 끝나고 목욕을 한 다음 머리를 말리면서 냉장고에서 갓 꺼낸 시원한 바나나 우유 하나 먹어주면 하루 끝입니다!</p>
+                                <div class="small text-muted">- 우유우유짱</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

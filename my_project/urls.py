@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
 from django.urls import path, include
-# from mysite import views
+from mysite import views
+# from existing_product import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('mysite/', include('mysite.urls')),
     path('', include('pages.urls')),
     path('accounts/', include('accounts.urls')),
+    # path('existing_product/', include('existing_product.urls')),
 ]
