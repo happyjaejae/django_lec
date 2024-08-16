@@ -10,4 +10,5 @@ urlpatterns = [
     path('q_a/', views.q_a),
     path('gaesipan/', views.gaesipan),
     path('existing_product/', views.existing_product),
+    path('exist_detail/', views.exist_detail),
 ]

@@ -20,3 +20,6 @@ def gaesipan(request):
 
 def existing_product(request):
     return render(request, 'pages/existing_product.html')
+
+def exist_detail(request):
+    return render(request, 'pages/exist_detail.html')
